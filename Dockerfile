@@ -14,4 +14,4 @@ WORKDIR /usr/local/bin
 
 COPY --from=builder /app/unbound-exporter .
 
-CMD ["./unbound-exporter", "-u", "unix:/unbound/unbound.sock", "-a", "0.0.0.0:9167"]
+CMD ["./unbound-exporter", "-u", "unix:///unbound/unbound.sock", "-a", "0.0.0.0:9167"]
